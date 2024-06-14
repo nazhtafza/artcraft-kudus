@@ -1,0 +1,41 @@
+/* File: public/css/styles.css */
+
+html {
+    font-family: 'plusJakartaSans', sans-serif;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    /* Pusatkan teks di dalam jumbotron */
+    animation: zoom-in 0.5s ease;
+    /* Animasi zoom-in */
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.jumbotron img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    /* Animasi transisi */
+}
+
+.jumbotron img:hover {
+    transform: scale(1.1);
+    /* Efek zoom-in saat di-hover */
+}
+
+.btn-custom:hover {
+    background-color: #e69e0e;
+    /* Ubah warna latar belakang saat tombol di-hover */
+}
